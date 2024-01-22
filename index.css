@@ -1,0 +1,153 @@
+* {
+    background-color: black;
+    color: white;
+}
+
+.main-container {
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.central-container {
+    height: 30vh;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Elements related to the box */
+@keyframes borderAnimation {
+    0% {
+        box-shadow: 0 0 10px 0 burlywood;
+    }
+    25% {
+        box-shadow: 10px 0 10px 0 burlywood;
+    }
+    50% {
+        box-shadow: 0 10px 10px 0 burlywood;
+    }
+    75% {
+        box-shadow: -10px 0 10px 0 burlywood;
+    }
+    100% {
+        box-shadow: 0 -10px 10px 0 burlywood;
+    }
+}
+
+.central-box { 
+    height: 130px;
+    width: 170px;
+    border: 1px solid burlywood;
+    border-radius: 15px;
+    background-color: transparent;
+    
+    animation: borderAnimation 2s linear infinite;
+
+    
+
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    
+}
+
+.box-title {
+    margin-top: 0px;
+    margin-left: 15px;
+    font-size: 11px;
+    height: 0;
+    margin-top: 10px;
+}
+
+.box-line{
+    padding-top: 0;
+    margin-left: 15px;
+    font-size: 14px;
+    height: 0;
+    font-weight: bold;
+}
+
+.line {
+    align-self: center;
+    width: 80%;
+    border-bottom: 1px solid #888;
+}
+
+.plugin-button {
+    align-self: center;
+    width: 80%;
+    border-radius: 20px;
+    height: 37px;
+    font-size: 12px;
+}
+
+.plugin_logo {
+    vertical-align: middle;
+    margin-right: 10px;
+    color: white;
+}
+
+/* Buton container
+.icon-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.icon-container > button {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+}
+
+/* Button labels */
+/*
+.icon-labels {
+    display: flex;
+    flex-direction: row;
+}
+
+.icon-labels > p {
+    font-size: 9px;
+    margin-right: 10px
+} */
+
+/* icons */
+.icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.icons > div > button{
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+}
+
+.icons > div > p{
+    text-align: center;
+    font-size: 9px;
+}
+
+.icon-img {
+    border-radius: 50%;
+}
+
+.last-btn {
+    margin-top: 30px;
+    width: 190px;
+    height: 45px;
+    border-radius: 20px;
+}
+
+/* for line  */
+
